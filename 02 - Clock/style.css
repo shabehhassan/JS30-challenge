@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(clock.jpg);
+}
+
+.clock{
+    width: 350px;
+    height: 350px;
+    color: white;
+    background: transparent;
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    border: 15px solid white;
+    border-radius: 100%;
+}
+
+.second-stick{
+    background: red;
+}
+
+.minute-stick{
+    background: white;
+}
+
+.hour-stick{
+    background: white;
+}
+
+.hand{
+    position: absolute;
+    width: 140px;
+    height: 5px;
+    top: 275px;
+    left: 540px;
+    transform-origin: 100%;
+    /* transform: rotate(0deg); */
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0, 2.82, 0.58, 1);
+}
